@@ -40,7 +40,9 @@
 
 
 @media (min-width:1200px){
-
+    .lpt{
+        margin-top: 26%
+    }
 .half-width-testimonial {
     height: 636px;
 }
@@ -140,6 +142,7 @@
 }
 }
 @media (min-width:992px) and (max-width:1200px) {
+
 .fables-sqr-rotation {
     width: 200px;
     height: 200px;

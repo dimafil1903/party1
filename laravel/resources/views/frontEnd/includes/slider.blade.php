@@ -1,9 +1,9 @@
 <div class="fables-header fables-after-overlay overlay-lighter index-traingle bg-rules" style="background-image: url(assets/custom/images/index-background.jpg);">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-lg-7  mr-auto z-index  " style="margin-top: 26%">
-                <div class=" z-index mt-md-4 mt-xl-5 pt-md-4 pt-xl-5 dots-0 pb-md-5">
-                    <div class="pt-0 mt-0 pt-xl-5 mt-xl-5 wow slideInUp" data-wow-duration="2s" data-wow-delay=".4s">
+            <div class="col-md-10 col-lg-7  mr-auto z-index  " style="margin-top: 15%">
+                <div class=" z-index mt-md-4 lpt mt-xl-4 pt-md-4 pt-xl-5 dots-0 pb-md-5">
+                    <div class="pt-0 mt-0 pt-xl-5  wow slideInUp" data-wow-duration="2s" data-wow-delay=".4s">
                         <h1 class="fables-main-text-color font-weight-bold mb-1">Політична партія
                             <span class="fables-second-text-color">НАЗВА</span>
                         </h1>
