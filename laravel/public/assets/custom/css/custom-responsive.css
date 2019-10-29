@@ -38,10 +38,14 @@
 */
 
 
-
+@media (min-width:2000px){
+    .lpt{
+        margin-top: 70%
+    }
+}
 @media (min-width:1200px){
     .lpt{
-        margin-top: 26%
+        margin-top: 40%
     }
 .half-width-testimonial {
     height: 636px;

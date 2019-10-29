@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/laravel/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/algolia/algoliasearch-client-php" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/arrilot/laravel-widgets" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/beyondcode/laravel-dump-server" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/dnoegel/php-xdg-base-dir" />
@@ -34,6 +35,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/laravel/scout" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/maximebf/debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/myclabs/deep-copy" />
