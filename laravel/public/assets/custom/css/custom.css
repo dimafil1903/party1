@@ -3435,3 +3435,10 @@ a.toggle-menu{
     border-left: 0 !important;
     border-radius: 0;
 }
+.shadow-card{
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+.owl-nav{
+    display: none;
+}

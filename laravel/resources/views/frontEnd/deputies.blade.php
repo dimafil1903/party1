@@ -21,7 +21,7 @@
                 @php
                 $iter++;
                 @endphp
-                <div class=" border fables-third-text-color py-4 px-6 mb-4 rounded position-relative wow  @if($iter%2==0) {{'bounceInLeft'}} @else {{'bounceInRight'}} @endif" data-wow-delay=".4s" data-wow-duration="1.5s">
+                <div class=" border fables-third-text-color py-4 px-6 mb-4 rounded position-relative shadow-card wow   @if($iter%2==0) {{'bounceInLeft'}} @else {{'bounceInRight'}} @endif" data-wow-delay=".4s" data-wow-duration="1.5s">
                     <div class="row overflow-hidden">
                         <div class="col-12 col-sm-6 text-center image-container translate-effect-right">
                             <img src="{{URL::asset('/storage/'.$deputy->photo)}}"  alt="Fables Template" class="fables-testimonial-block-img fables-third-background-color border-color border-2 ">
