@@ -60,7 +60,7 @@ class NewsController extends MainController
                             ". $newsitem->excerpt ."
                             </p>
 
-                            <a href='".url("news/$newsitem->id")."' class=\"fables-main-text-color p-0 underline fables-second-hover-color font-15\">Read More</a>
+                            <a href='".url("news/$newsitem->id")."' class=\"fables-main-text-color p-0 underline fables-second-hover-color font-15\">Читати далі</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ class NewsController extends MainController
             'query' =>  $request
         ) );
 
-        return view('frontEnd.Search',['news'=>$orders]);
+        return view('frontEnd.Search',['news'=>$orders,'request'=>$request]);
 
     }
 

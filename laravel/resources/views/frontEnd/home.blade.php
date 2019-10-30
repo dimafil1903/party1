@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="btn fables-second-background-color modal-title font-weight-bold fables-btn-rounded  white-color mt-3 position-relative z-index font-19 px-5 py-2 white-color-hover"
+                    <a href="" class="btn  fables-third-background-color fables-background-link modal-title font-weight-bold fables-btn-rounded  white-color mt-3  z-index font-19 px-5  "
                        data-toggle="modal" data-target="#modalContactForm">Напиши нам</a>
                 </div>
             </div>

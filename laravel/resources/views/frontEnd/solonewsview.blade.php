@@ -88,16 +88,16 @@
         </div>
         <div class="col-12 col-lg-4">
             <div class="fables-blog-search">
-                <form>
+                <form action="{{action('NewsController@qw')}}" method="GET">
                     <div class="row">
                         <div class="col-12 col-sm-9 col-md-8 mb-3 mb-md-0">
                             <div class="input-icon">
                                 <span class="fables-iconsearch-icon fables-input-icon font-14"></span>
-                                <input type="text" class="form-control rounded-0 py-2 width-100">
+                                <input type="text" name="query" class="form-control rounded-0 py-2 width-100">
                             </div>
                         </div>
                         <div class="col-12 col-sm-3 col-md-4 pl-md-0">
-                            <button type="submit" class="btn fables-second-background-color rounded-0 text-white font-15 semi-font py-2 btn-block">Search</button>
+                            <button type="submit" class="btn fables-second-background-color rounded-0 text-white font-15 semi-font py-2 btn-block">Пошук</button>
                         </div>
                     </div>
 
@@ -130,14 +130,16 @@
                 <hr>
             </div>
             <div class="mt-4">
-                <h2 class="position-relative font-23 semi-font fables-blog-category-head fables-main-text-color fables-second-before pl-3 mb-4">Tages</h2>
+                <h2 class="position-relative font-23 semi-font fables-blog-category-head fables-main-text-color fables-second-before pl-3 mb-4">Теги</h2>
                 <ul class="nav fables-blog-cat-list fables-forth-text-color fables-second-hover-color-link fables-blog-cat-tags">
-                    <li><a href="">Accountant</a></li>
-                    <li><a href="">Online Services </a></li>
-                    <li><a href="">Accountant</a></li>
-                    <li><a href="">Accountant</a></li>
-                    <li><a href="">Accountant</a></li>
-                    <li><a href="">Online Services </a></li>
+                    @php
+                        $pieces = explode(" ", $news->meta_keywords);
+
+                              foreach ($pieces as $piece){
+                              echo " <li><a href='".url('/news/search/?query='.$piece)."'>$piece</a></li>";
+                              }
+                    @endphp
+
                 </ul>
             </div>
         </div>

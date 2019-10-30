@@ -28,7 +28,7 @@
 
     </div>
     <div class="col-12 col-md-12 offset-xl-12 position-sticky col-xl-12 text-center">
-        <a href="{{url('/deputies')}}" class="btn fables-second-background-color fables-btn-rounded white-color m-3 position-relative z-index font-19 px-5 py-2 white-color-hover">Вся команда</a>
+        <a href="{{url('/deputies')}}" class="btn fables-second-border-color fables-btn-rounded fables-background-link font-20 white-color mt-4 m-3  px-5 py-2">Вся команда</a>
     </div>
 
 </div>

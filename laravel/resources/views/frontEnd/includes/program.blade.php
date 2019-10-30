@@ -39,7 +39,7 @@
                         @endforeach
                 </div>
                 <div class="col-12 col-md-12 offset-xl-12 position-sticky col-xl-12 text-center">
-                    <a href="contactus1.html" class="btn fables-second-background-color fables-btn-rounded white-color mt-3 position-relative z-index font-19 px-5 py-2 white-color-hover">Вся програма</a>
+                    <a href="{{url('/program')}}" class="btn fables-second-border-color fables-btn-rounded fables-background-link font-20 white-color white-color mt-3 position-relative z-index font-19 px-5 py-2">Вся програма</a>
                 </div>
             </div>
         </div>

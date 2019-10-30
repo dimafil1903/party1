@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        App\Providers\FacebookServiceProvider::class,
         /*
          * Application Service Providers...
          */

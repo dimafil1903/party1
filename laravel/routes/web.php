@@ -17,9 +17,11 @@ Route::get('/', function () {
 Route::get('/join', function () {
     return view('frontEnd.join');
 });
-
-Route::get('/', 'ProgramController@index');
+Route::get('/program', 'ProgramController@index');
+Route::get('/fb', 'FBController@index');
+Route::get('/', 'MainController@index');
 Route::get('/news/search', 'NewsController@qw');
+Route::post('voyager.posts.store', "FBController@index");
 Route::get('/deputies', 'TeamController@index');
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{id}', 'NewsController@solonews');
