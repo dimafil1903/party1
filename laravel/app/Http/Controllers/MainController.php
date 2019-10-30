@@ -14,7 +14,7 @@ class MainController extends Controller
         $statisticks=$st->getStats(4);
         $news = $ns->getNews(3);
         $deputies = $dp->getdeps();
-        $programs = $pr->getPrograms();
+        $programs = $pr->getPrograms(5);
         $blocks = $bk->getBlocks();
         $comment_blocks = $cmbk->getCommentBlocks();
 

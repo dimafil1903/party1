@@ -103,6 +103,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/algolia/algoliasearch-client-php" />
       <path value="$PROJECT_DIR$/laravel/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/laravel/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/laravel/vendor/facebook/graph-sdk" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
