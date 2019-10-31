@@ -1,10 +1,11 @@
 <div class="search-section">
     <a class="close-search" href="#"></a>
     <div class="d-flex justify-content-center align-items-center h-100">
-        <form method="post" action="#" class="w-50">
+        <form method="get" action="{{action('SearchController@index')}}" class="w-50">
             <div class="row">
                 <div class="col-10">
-                    <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." />
+                    <input type="search" name="query" value=""
+                           class="form-control palce bg-transparent border-0 search-input" placeholder="Пошук"/>
                 </div>
                 <div class="col-2 mt-3">
                     <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
@@ -26,12 +27,14 @@
 <!-- /End Top Header -->
 
 <div class="fables-transparent  py-3 py-lg-3">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-10 pr-md-0">
                 <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-                    <a class="navbar-brand fables-logo-brand pl-0" href="index.html"><img src="assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
+                    <a class="navbar-brand fables-logo-brand pl-0" href="{{url('/')}}"><img
+                            src="{{URL::asset('/storage/'.setting('site.logo'))}}" alt="{{ setting('site.title')}}"
+                            class="fables-logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fables-iconmenu-icon text-white font-16"></span>
                     </button>
@@ -44,7 +47,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-5 col-md-2 pr-md-0 icons-header-mobile">
+            <div class="col-5 mt-3 col-md-2 pr-md-0 icons-header-mobile">
                 <div class="fables-header-icons pt-lg-4 text-right">
                     <a href="#" class="open-search fables-third-text-color fables-mega-menu-btn px-4  fables-second-hover-color">
                         <span class="fables-iconsearch-icon"></span>

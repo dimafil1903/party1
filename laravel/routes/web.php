@@ -20,6 +20,10 @@ Route::get('/join', function () {
 Route::get('/program', 'ProgramController@index');
 Route::get('/fb', 'FBController@index');
 Route::get('/', 'MainController@index');
+
+Route::get('/search', 'SearchController@index');
+Route::get('/search/fetch_dep', 'SearchController@fetch_dep');
+Route::get('/search/fetch_news', 'SearchController@fetch_news');
 Route::get('/news/search', 'NewsController@qw');
 Route::post('voyager.posts.store', "FBController@index");
 Route::get('/deputies', 'TeamController@index');

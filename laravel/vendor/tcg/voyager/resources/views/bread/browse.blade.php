@@ -258,12 +258,12 @@
                                                     @include('voyager::bread.partials.actions', ['action' => $action])
                                                 @endif
                                             @endforeach
-                                            @if(url()->current()==env('APP_URL').'admin/posts')
+                                            @if(url()->current()==env('APP_URL').'/admin/posts')
                                             @if(setting('general.app_id'))
 
                                                     <form method="POST" action="{{action('FBController@index')}}">
                                                         <input type="hidden" name="text" value="{{$data->title}}">
-                                                        <input type="hidden" name="url" value="{{env('APP_URL').'news/'.$data->id}}">
+                                                        <input type="hidden" name="url" value="{{env('APP_URL').'/news/'.$data->id}}">
                                                         {{ csrf_field() }}
                                                         <button type="submit">post to facebook</button>
                                                     </form>

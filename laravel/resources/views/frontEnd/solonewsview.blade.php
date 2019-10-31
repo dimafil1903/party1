@@ -39,7 +39,7 @@
                                               $pieces = explode(" ", $news->meta_keywords);
 
                                                     foreach ($pieces as $piece){
-                                                    echo "<a href='".url('searh/'.$piece)."'>$piece</a>";
+                                                    echo "<a href='".url('searh/?query='.$piece)."'>$piece</a>";
                                                     }
                                           @endphp
                                       </span>
@@ -88,7 +88,7 @@
         </div>
         <div class="col-12 col-lg-4">
             <div class="fables-blog-search">
-                <form action="{{action('NewsController@qw')}}" method="GET">
+                <form action="{{action('SearchController@index')}}" method="GET">
                     <div class="row">
                         <div class="col-12 col-sm-9 col-md-8 mb-3 mb-md-0">
                             <div class="input-icon">
@@ -136,7 +136,7 @@
                         $pieces = explode(" ", $news->meta_keywords);
 
                               foreach ($pieces as $piece){
-                              echo " <li><a href='".url('/news/search/?query='.$piece)."'>$piece</a></li>";
+                              echo " <li><a href='".url('/search/?query='.$piece)."'>$piece</a></li>";
                               }
                     @endphp
 

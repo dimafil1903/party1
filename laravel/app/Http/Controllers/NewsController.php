@@ -2,10 +2,9 @@
 
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends MainController
 {
@@ -108,8 +107,11 @@ class NewsController extends MainController
         $orders->appends( array (
             'query' =>  $request
         ) );
-
-        return view('frontEnd.Search',['news'=>$orders,'request'=>$request]);
+        $is_empty = false;
+        if ($orders->isEmpty()) {
+            $is_empty = true;
+        }
+        return view('frontEnd.Search', ['news' => $orders, 'request' => $request, 'is_empty' => $is_empty]);
 
     }
 

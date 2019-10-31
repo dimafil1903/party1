@@ -47,6 +47,10 @@
     .lpt{
         margin-top: 40%
     }
+
+    .describe-block {
+        padding: 15%;
+    }
 .half-width-testimonial {
     height: 636px;
 }
