@@ -5,6 +5,7 @@ namespace TCG\Voyager\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Laravel\Scout\Searchable;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\Resizable;
 use TCG\Voyager\Traits\Translatable;
@@ -12,7 +13,8 @@ use TCG\Voyager\Traits\Translatable;
 class Post extends Model
 {
     use Translatable,
-        Resizable;
+        Resizable,
+        Searchable;
 
     protected $translatable = ['title', 'seo_title', 'excerpt', 'body', 'slug', 'meta_description', 'meta_keywords'];
 
@@ -46,7 +48,12 @@ class Post extends Model
     {
         return $query->where('status', '=', static::PUBLISHED);
     }
+    public function toSearchableArray()
+    {
+        $array = $this->toArray();
 
+        return array('id' => $array['id'],'title' => $array['title'],'body' => $array['body'],'excerpt' => $array['excerpt']);
+    }
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */

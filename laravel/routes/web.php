@@ -22,6 +22,8 @@ Route::get('/fb', 'FBController@index');
 Route::get('/', 'MainController@index');
 
 Route::get('/search', 'SearchController@index');
+Route::post('/save_mail', 'MailController@savemail');
+Route::get('/send/email', 'MailController@mail');
 Route::get('/search/fetch_dep', 'SearchController@fetch_dep');
 Route::get('/search/fetch_news', 'SearchController@fetch_news');
 Route::get('/news/search', 'NewsController@qw');

@@ -5,13 +5,14 @@ namespace TCG\Voyager\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
+use Laravel\Scout\Searchable;
 use TCG\Voyager\Database\Schema\SchemaManager;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\Translatable;
 
 class DataType extends Model
 {
-    use Translatable;
+    use Translatable,Searchable;
 
     protected $translatable = ['display_name_singular', 'display_name_plural'];
 

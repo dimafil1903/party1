@@ -54,20 +54,22 @@
             <div class="fabales-single-share">
                 <div class="row mt-3 mb-4">
                     <div class="col-3 col-sm-2">
-                        <span class="fables-forth-text-color underline  mt-2 font-18 d-inline-block">Share</span>
+                        <span class="fables-forth-text-color underline  mt-2 font-18 d-inline-block">Поділитись</span>
                     </div>
                     <div class="col-7 px-0 px-sm-3">
                         <ul class="nav mt-2">
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-icongooglePlus"></span></a></li>
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-iconfacebook"></span></a></li>
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-iconinstagram"></span></a></li>
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-iconpinterest"></span></a></li>
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-icontwitter"></span></a></li>
-                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><span class="fables-iconlinkedIn"></span></a></li>
+
+
+                            <li><a onclick="window.open('fb-messenger://share?link={{url()->current()}}'  + '&app_id={{setting('general.app_id')}}', 'Поділитись', 'width=400,height=500'); return false;" href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class="fab fa-facebook-messenger"></i></a></li>
+                            <li><a  onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}', 'Поділитись', 'width=400,height=500'); return false;"href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class="fables-iconfacebook"></i></a></li>
+                            <li><a href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class="fables-iconinstagram"></i></a></li>
+                            <li><a  onclick="window.open('https://telegram.me/share/url?url={{url()->current()}}', 'Поділитись', 'width=400,height=500'); return false;" href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class=" fab fa-telegram"></i></a></li>
+                            <li><a onclick="window.open('https://twitter.com/intent/tweet?url={{url()->current()}}', 'Поділитись', 'width=400,height=500'); return false;" href="" class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class="fables-icontwitter"></i></a></li>
+                            <li><a href="mailto:info@example.com?&subject=&body={{url()->current()}} " class="fables-forth-text-color fables-single-link fables-second-hover-color"><i class="fables-iconemail"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-3 mt-3 mt-sm-0 text-center">
-                        <button class="btn btn-link fables-forth-border-color fables-forth-hover-backround-color fables-forth-text-color text-center font-14 float-none float-sm-right py-2 px-4" onclick="window.print();"><span class="fables-iconprint"></span> Print Article</button>
+                        <button class="btn btn-link fables-forth-border-color fables-forth-hover-backround-color fables-forth-text-color text-center font-14 float-none float-sm-right py-2 px-4" onclick="window.print();"><span class="fables-iconprint"></span> Надрукувати статтю</button>
                     </div>
 
                 </div>

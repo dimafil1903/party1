@@ -23,6 +23,8 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/intervention/image" />

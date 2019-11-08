@@ -3,10 +3,11 @@
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center">
                 <h2 class="font-30 semi-font mb-5">Newsletter</h2>
-                <form class="form-inline position-relative">
+                <form class="form-inline position-relative" method="post" action="{{url('/save_mail')}}">
                     <div class="form-group fables-subscribe-formgroup">
-                        <input type="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
+                        <input type="email" name="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
                     </div>
+                    <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                     <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn">Subscribe</button>
                 </form>
 

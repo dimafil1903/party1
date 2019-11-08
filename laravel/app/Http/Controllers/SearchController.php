@@ -47,4 +47,7 @@ class SearchController extends Controller
             return view('frontEnd.includes.pagination_news', compact('news'))->render();
         }
     }
+
+
+
 }

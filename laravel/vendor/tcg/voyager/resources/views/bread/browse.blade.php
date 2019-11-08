@@ -258,17 +258,18 @@
                                                     @include('voyager::bread.partials.actions', ['action' => $action])
                                                 @endif
                                             @endforeach
-                                            @if(url()->current()==env('APP_URL').'/admin/posts')
+                                                @if($dataType->model_name=="TCG\Voyager\Models\Post")
                                             @if(setting('general.app_id'))
-
+                                                        <!---@ php      echo "<pre>";var_dump($dataType->model_name);echo "</pre>";      @ endphp  -->
                                                     <form method="POST" action="{{action('FBController@index')}}">
                                                         <input type="hidden" name="text" value="{{$data->title}}">
-                                                        <input type="hidden" name="url" value="{{env('APP_URL').'/news/'.$data->id}}">
+                                                        <input type="hidden" name="url" value="{{url('/news/'.$data->id)}}">
                                                         {{ csrf_field() }}
-                                                        <button type="submit">post to facebook</button>
+                                                        <button class="btn btn-sm btn-primary pull-right edit" type="submit">Опублікувати у Facebook</button>
                                                     </form>
                                                 @endif
                                                 @endif
+
                                         </td>
 
                                     </tr>
