@@ -8,7 +8,7 @@
 
     <div class="container py-3 py-lg-5">
         <div class="fables-team my-3">
-            <h3 class="fables-second-text-color mb-5 font-weight-bold"> Team </h3>
+            <h3 class="fables-second-text-color mb-5 font-weight-bold"> Команда </h3>
         </div>
     </div>
 
@@ -21,7 +21,7 @@
                 @php
                 $iter++;
                 @endphp
-                <div class=" border fables-third-text-color py-4 px-6 mb-4 rounded position-relative shadow-card wow   @if($iter%2==0) {{'bounceInLeft'}} @else {{'bounceInRight'}} @endif" data-wow-delay=".4s" data-wow-duration="1.5s">
+                <div id="{{$deputy->id}}" class="  border fables-third-text-color py-4 px-6 mb-4 rounded position-relative shadow-card wow   @if($iter%2==0) {{'bounceInLeft'}} @else {{'bounceInRight'}} @endif" data-wow-delay=".4s" data-wow-duration="1.5s">
                     <div class="row overflow-hidden">
                         <div class="col-12 col-sm-6 text-center image-container translate-effect-right">
                             <img src="{{URL::asset('/storage/'.$deputy->photo)}}"  alt="Fables Template" class="fables-testimonial-block-img fables-third-background-color border-color border-2 ">

@@ -1,6 +1,6 @@
 <div class="fables-testimonial fables-after-overlay py-4 py-lg-5 bg-rules">
     <div class="container">
-        <h2 class="position-relative z-index white-color font-35 font-weight-bold text-center mb-4">Testimonial</h2>
+        <h2 class="position-relative z-index white-color font-35 font-weight-bold text-center mb-4">Слова лідерів</h2>
         <div class="owl-carousel owl-theme" id="fables-testimonial-carousel">
 
 

@@ -43,9 +43,15 @@
         margin-top: 70%
     }
 }
+
+@media (max-width:1200px){
+    .lpt{
+        margin-top: 25em;
+    }
+}
 @media (min-width:1200px){
     .lpt{
-        margin-top: 40%
+        margin-top: 25em;
     }
 
     .describe-block {
@@ -100,6 +106,9 @@
 }
 }
 @media (max-width:992px){
+    .lpt{
+        margin-top: 20em;
+    }
 .choose-img-border-after::after{
     display: none;
 }
@@ -238,6 +247,9 @@
 }
 }
 @media (max-width:767px) {
+    .lpt{
+        margin-top: 15em;
+    }
 .btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu {
     background: #2c3e4f;
 }
@@ -245,7 +257,7 @@
     color: #fff;
 }
 .icons-header-mobile{
-    position: absolute;
+
     right: 18%;
     top: 21px;
 }
@@ -709,7 +721,7 @@
     float: none;
 }
 .fables-transparent{
-    position: sticky!important;
+
     z-index: 699;
     background-color: #2C3E4F;
 }
@@ -754,6 +766,10 @@
 }
 }
 @media (max-width:425px){
+
+    .lpt{
+        margin-top: 7em;
+    }
     .blog-timeline .cd-date::after {
         display: none;
     }
@@ -967,6 +983,9 @@
 
 }
 @media (max-width:480px){
+    .font-mob{
+        font-size: 14px;
+    }
 .fables-blog-overlay h2 a{
     font-size: 14px ;
 }
@@ -1073,6 +1092,9 @@
 }
 }
 @media (max-width:375px) {
+    .font-mob{
+        font-size: 10px;
+    }
 .gallery-timeline#cd-timeline::before {
     left: 9%;
     margin-left: 0;

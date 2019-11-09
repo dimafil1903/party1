@@ -2,21 +2,33 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center">
-                <h2 class="font-30 semi-font mb-5">Newsletter</h2>
+                <h2 class="font-30 semi-font mb-5">Підписатися на розсилку</h2>
                 <form class="form-inline position-relative" method="post" action="{{url('/save_mail')}}">
                     <div class="form-group fables-subscribe-formgroup">
-                        <input type="email" name="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
+                        <input type="email" name="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Ваш Email">
                     </div>
                     <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                    <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn">Subscribe</button>
+                    <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn">Підписатися</button>
                 </form>
 
             </div>
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <a href="{{url('/')}}"
-                   class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img
-                        src="{{URL::asset('/storage/'.setting('site.logo'))}}" alt="{{ setting('site.title')}}"
-                        alt="fables template"></a>
+
+
+                @if(setting('site.logo'))
+                    <a href="{{url('/')}}"
+                       class="fables-second-border-color image-container border-bottom pb-3 d-block mb-3 mt-minus-13"><img
+                            src="{{URL::asset('/storage/'.setting('site.logo'))}}" alt="{{ setting('site.title')}}"
+                            alt="fables template"></a>
+                @else
+                    <a class=""  href="{{url('/')}}">
+                        <h5 class="fables-third-text-color font-weight-bold  ">{{setting('site.pre_title')}}
+                            <span class="fables-second-text-color font">{{setting('site.title')}}</span>
+                        </h5>
+
+                    </a>
+                @endif
+
                 <p class="font-15 fables-third-text-color">
                     {!! setting('site.description') !!}
                 </p>

@@ -29,12 +29,24 @@
 <div class="fables-transparent  py-3 py-lg-3">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-10 pr-md-0">
-                <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+            <div class="col-9 col-md-9 ">
+                <nav class="navbar navbar-expand-md row btco-hover-menu  py-lg-2">
+                    @if(setting('site.logo'))
+                    <a class="navbar-brand image-container fables-logo fables-logo-brand pl-0 " href="{{url('/')}}">
 
-                    <a class="navbar-brand fables-logo-brand pl-0" href="{{url('/')}}"><img
+
+                        <img class=""
                             src="{{URL::asset('/storage/'.setting('site.logo'))}}" alt="{{ setting('site.title')}}"
-                            class="fables-logo"></a>
+                            >
+                    </a>
+                    @else
+                        <a class="font-mob"  href="{{url('/')}}" >
+                            <h6 class="fables-third-text-color font-mob font-weight-bold  ">{{setting('site.pre_title')}}
+                                <span class="fables-second-text-color font-mob">{{setting('site.title')}}</span>
+                            </h6>
+
+                    </a>
+                    @endif
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fables-iconmenu-icon text-white font-16"></span>
                     </button>
@@ -47,9 +59,9 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-5 mt-3 col-md-2 pr-md-0 icons-header-mobile">
+            <div class=" col-mb-3  icons-header-mobile">
                 <div class="fables-header-icons pt-lg-4 text-right">
-                    <a href="#" class="open-search fables-third-text-color fables-mega-menu-btn px-4  fables-second-hover-color">
+                    <a href="#" class="open-search fables-third-text-color fables-mega-menu-btn px-4 mr-3  fables-second-hover-color">
                         <span class="fables-iconsearch-icon"></span>
                     </a>
                 </div>

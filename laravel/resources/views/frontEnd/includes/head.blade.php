@@ -28,7 +28,7 @@
 <link href="{{ asset('assets/vendor/owlcarousel/owl.theme.default.min.css') }}" rel="stylesheet">
 <!-- FABLES CUSTOM CSS FILE -->
 <link href="{{ asset('assets/custom/css/custom.css') }}" rel="stylesheet">
-
+<link href="{{ asset('assets/custom/css/fonts.css') }}" rel="stylesheet">
 <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
 <link href="{{ asset('assets/custom/css/custom-responsive.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('assets/vendor/timeline/timeline.css')}}">
